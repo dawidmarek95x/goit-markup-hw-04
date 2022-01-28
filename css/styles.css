@@ -11,6 +11,7 @@
   --colorBackground-light: #f5f4fa;
   --colorBorder-header: #ececec;
   --colorBorder-projects: #eeeeee;
+  --colorPrimary-icons: #afb1b8;
   --fontStyle-main: normal;
   --fontStyle-italic: italic;
   --fontWeight-medium: 500;
@@ -147,12 +148,34 @@ img {
   color: var(--colorAccent);
 }
 
+.header-list-links:hover > svg,
+.header-list-links:focus > svg {
+  fill: var(--colorAccent);
+}
+
 .navigation-list-link {
   color: var(--colorPrimary);
 }
 
 .header-contact-link {
+  display: flex;
+  align-items: center;
   color: var(--colorSecondary);
+}
+
+.header-contact-link-icon {
+  margin-right: 10px;
+  fill: var(--colorSecondary);
+}
+
+.envelope-icon {
+  width: 16px;
+  height: 12px;
+}
+
+.smartphone-icon {
+  width: 10px;
+  height: 16px;
 }
 
 .navigation-active-link {
@@ -203,6 +226,12 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--colorBackground-dark);
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+  url(/images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-content {
@@ -251,6 +280,12 @@ img {
   margin-right: 30px;
 }
 
+.about-content-icon-container {
+  width: 270px;
+}
+
+.about-content-icon {}
+
 .about-content-header {
   margin-bottom: 10px;
   font-weight: var(--fontWeight-bold);
@@ -285,8 +320,7 @@ img {
 
 .team-list-item {
   background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -337,7 +371,8 @@ img {
   cursor: pointer;
 }
 
-.portfolio-filter-set-btn:hover {
+.portfolio-filter-set-btn:hover,
+.portfolio-filter-set-btn:focus {
   color: var(--colorWhite);
   background-color: var(--colorAccent);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -351,6 +386,10 @@ img {
 
 .portfolio-project-item {
   border: 1px solid var(--colorBorder-projects);
+}
+
+.portfolio-project-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-project-item:nth-child(-n+6) {

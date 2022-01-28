@@ -42,17 +42,25 @@
           </ul>
         </nav>
         <ul class="header-contact styles-for-lists">
-          <li class="header-contact-item">
-            <a class="header-contact-link header-list-links link-dec" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="header-contact-item">
-            <a class="header-contact-link header-list-links link-dec" href="tel:+48111111111"
-              >+48 111 111 111</a
-            >
-          </li>
-        </ul>
+            <li class="header-contact-item">
+              <a class="header-contact-link header-list-links link-dec" href="mailto:info@devstudio.com">
+                <svg class="header-contact-link-icon envelope-icon">
+                  <use href="/images/icons.svg#icon-envelope">
+                  </use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="header-contact-item">
+              <a class="header-contact-link header-list-links link-dec" href="tel:+48111111111">
+                <svg class="header-contact-link-icon smartphone-icon">
+                  <use href="/images/icons.svg#icon-smartphone">
+                  </use>
+                </svg>
+                +48 111 111 111
+              </a>
+            </li>
+          </ul>
       </div>
     </header>
 
@@ -60,6 +68,8 @@
     <main class="main-section-portfolio">
       <section class="portfolio section">
         <div class="container">
+
+          <!-- PORTFOLIO FILTERS -->
           <ul class="portfolio-filter-set styles-for-lists">
             <li class="portfolio-filter-set-item">
               <button class="portfolio-filter-set-btn" type="button">Wszystkie</button>
@@ -77,7 +87,8 @@
               <button class="portfolio-filter-set-btn" type="button">Marketing</button>
             </li>
           </ul>
-  
+          
+          <!-- PORTFOLIO PROJECTS -->
           <ul class="portfolio-project styles-for-lists">
             <li class="portfolio-project-item">
               <img
